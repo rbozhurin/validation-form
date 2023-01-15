@@ -12,7 +12,41 @@
   <body>
     <div class="main">
       <form class="form">
-        <!-- input go here -->
+        <form>
+          <label for="name">Project Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            class="input"
+            required
+            minlength="20"
+            placeholder="Enter the project name here..."
+          />
+          <label for="contributors">Number of Contributors:</label>
+          <input
+            type="number"
+            id="contributors"
+            name="contributors"
+            class="input"
+            required
+            min="1"
+            max="100"
+            placeholder="Enter the number of contributors here..."
+          />
+
+          <label for="max_branches">Max Branches:</label>
+          <input
+            type="number"
+            id="max_branches"
+            name="max_branches"
+            class="input"
+            required
+            min="1"
+            max="100"
+            placeholder="Enter the maximum number of branches here..."
+          />
+        </form>
         <button class="button">Save</button>
       </form>
     </div>
